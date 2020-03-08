@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>注册</title>
+    <link rel="stylesheet" href="regist.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/regist_ajax.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+<form>
+    <h1>注册</h1>
+    <table>
+        <tr>
+            <td colspan="2"><font color="red">
+
+            </font></td>
+        </tr>
+        <tr>
+            <td class="tds">手机号：</td>
+            <td>
+                <input type="text" name="phone" placeholder="请输入手机号码"/>
+                <span style="color: red" id="phone_msg"></span>
+                <a href="javascript:void(0);" id="verify_code" class="code">
+                    <span>获取验证码</span>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tds">密码：</td>
+            <td>
+                <input type="password" name="password" placeholder="请输入密码"/>
+                <span style="color: red" id="password_msg"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="tds">确认密码：</td>
+            <td>
+                <input type="password" name="password2" placeholder="请输入密码"/>
+                <span style="color: red" id="password2_msg"></span>
+            </td>
+        </tr>
+        <tr id="code" style="display: none;">
+            <td class="tds">验证码：</td>
+            <td>
+                <input type="text" name="auth" placeholder="请输入手机验证码"/>
+                <span style="color: red" id="auth_msg"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="sub_td" colspan="2" class="tds">
+                <input type="submit" value="注册用户"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
